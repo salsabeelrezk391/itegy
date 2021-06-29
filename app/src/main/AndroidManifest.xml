@@ -9,11 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Itegy">
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".CdActivity"></activity>
+        <activity android:name=".HarddiskActivity" />
+        <activity android:name=".PrinterActivity" />
+        <activity android:name=".DesktopActivity" />
+        <activity android:name=".ServerActivity" />
+        <activity android:name=".LabtopActivity" />
+        <activity android:name=".OfferActivity" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -1,14 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/home_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:textSize="30dp"
-        tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    >
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/offers_"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        app:cardCornerRadius="70dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="10dp"
+            android:src="@drawable/offe" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Offers!"
+            android:layout_gravity="bottom"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            tools:ignore="RtlCompat" />
+
+    </androidx.cardview.widget.CardView>
+
+    <GridLayout
+        android:id="@+id/idGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/offers_"
+        android:padding="4dp"
+        android:layout_marginTop="8dp"
+        android:columnCount="2"
+        android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/labtops"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="6dp"
+            app:cardCornerRadius="40dp"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/latob" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Labtops"
+                android:layout_gravity="bottom"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                tools:ignore="RtlCompat" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/servers"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="6dp"
+            app:cardCornerRadius="40dp"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/serverssss" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Servers"
+                android:layout_gravity="bottom"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                tools:ignore="RtlCompat" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/printer"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="3dp"
+            app:cardCornerRadius="40dp"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/printer" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Printer"
+                android:layout_gravity="bottom"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                tools:ignore="RtlCompat" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/desktop"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="3dp"
+            app:cardCornerRadius="40dp"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/desktop" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DeskTops"
+                android:layout_gravity="bottom"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                tools:ignore="RtlCompat" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/harddisk"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="3dp"
+            app:cardCornerRadius="40dp"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/harddis" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hard Disks"
+                android:layout_gravity="bottom"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                tools:ignore="RtlCompat" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="3dp"
+            app:cardCornerRadius="40dp"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cd" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CD "
+                android:layout_gravity="bottom"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                tools:ignore="RtlCompat" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </GridLayout>
+</LinearLayout>
+
+
+
+

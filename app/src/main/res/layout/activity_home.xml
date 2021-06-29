@@ -17,6 +17,7 @@
         android:layout_margin="12dp"
         android:layout_marginBottom="10dp"
         android:queryHint="What are you looking for?"
+        android:outlineSpotShadowColor="@color/black"
         android:background="@drawable/customsearch"
         tools:ignore="MissingConstraints" />
     ////////////////////////////////////Fragment////////////////////////////////////////////////////
@@ -26,8 +27,11 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomnavigation"
         app:layout_constraintTop_toBottomOf="@+id/searchview"
-        tools:layout_editor_absoluteX="188dp"
-    />
+        tools:layout_editor_absoluteX="188dp">
+
+
+
+</FrameLayout>
 
     ///////////////////////////////// bottom navigation///////////////////////////////////////////////
 
